@@ -11,12 +11,18 @@ class CategoryItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(20),
-      child: Text(category.title),
+      child: Text(
+        category.title,
+        style: const TextStyle(
+          fontSize: 24,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
         gradient: LinearGradient(
           colors: [
-            category.color.withOpacity(0.8),
+            category.color.withOpacity(0.7),
             category.color,
           ],
           begin: Alignment.topLeft,
