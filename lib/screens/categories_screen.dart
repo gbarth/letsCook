@@ -11,25 +11,24 @@ class CategoriesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
-          gradient: LinearGradient(
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-        stops: [0.1, 0.3, 0.5, 0.7, 0.9],
-        colors: [
-          Color.fromARGB(115, 255, 82, 59),
-          Color.fromARGB(123, 244, 193, 54),
-          Color.fromARGB(120, 67, 181, 63),
-          Color.fromARGB(118, 0, 10, 150),
-          Color.fromARGB(123, 202, 0, 67),
-        ],
-      )),
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          stops: [0.1, 0.3, 0.5, 0.7, 0.9],
+          colors: [
+            Color.fromARGB(115, 255, 82, 59),
+            Color.fromARGB(123, 244, 193, 54),
+            Color.fromARGB(120, 67, 181, 63),
+            Color.fromARGB(118, 0, 10, 150),
+            Color.fromARGB(123, 202, 0, 67),
+          ],
+        ),
+      ),
       child: Scaffold(
+        backgroundColor: Colors.transparent,
         appBar: AppBar(
           centerTitle: true,
-          toolbarHeight: 80,
-          title: const SizedBox(
-            child: Text('Let\'sCook'),
-          ), //const Center(child: Text('Let\'sCook')),
+          title: const Text('Let\'sCook'),
         ),
         body: GridView(
           padding: const EdgeInsets.all(21),
