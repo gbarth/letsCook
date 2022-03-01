@@ -26,8 +26,9 @@ class CategoryItem extends StatelessWidget {
         child: Text(
           category.title,
           style: const TextStyle(
-            fontSize: 19,
-            fontWeight: FontWeight.bold,
+            fontFamily: 'Raleway',
+            fontSize: 17,
+            fontWeight: FontWeight.w600,
           ),
         ),
         decoration: BoxDecoration(

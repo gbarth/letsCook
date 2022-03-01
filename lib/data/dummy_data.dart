@@ -52,6 +52,6 @@ const DUMMY_CATEGORIES = [
   Category(
     id: 'c10',
     title: 'Summer',
-    color: Color.fromARGB(255, 49, 49, 49),
+    color: Color.fromARGB(244, 255, 84, 255),
   ),
 ];

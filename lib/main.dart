@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
           primary: const Color.fromARGB(255, 0, 0, 0),
           secondary: const Color.fromARGB(255, 252, 252, 252),
         ),
-        fontFamily: 'Shizuru',
+        fontFamily: 'Lobster',
         textTheme: ThemeData.dark().textTheme.copyWith(
               titleLarge: const TextStyle(
                 fontSize: 30,
