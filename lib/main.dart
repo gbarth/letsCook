@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
       routes: {
         AppRoutes.HOME: (context) => const CategoriesScreen(),
         AppRoutes.CATEGORIES_MEAL: (context) => CategoriesMealsScreen(),
-        AppRoutes.MEAL_DETAIL: (context) => const MealDetailScreen(),
+        AppRoutes.MEAL_DETAIL: (context) => MealDetailScreen(),
       },
       onUnknownRoute: (settings) {
         return MaterialPageRoute(
