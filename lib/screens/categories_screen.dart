@@ -24,24 +24,17 @@ class CategoriesScreen extends StatelessWidget {
           ],
         ),
       ),
-      child: Scaffold(
-        backgroundColor: Colors.transparent,
-        appBar: AppBar(
-          centerTitle: true,
-          title: const Text('Let\'sCook'),
+      child: GridView(
+        padding: const EdgeInsets.all(21),
+        gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+          maxCrossAxisExtent: 200,
+          childAspectRatio: 3 / 2,
+          mainAxisSpacing: 20,
+          crossAxisSpacing: 20,
         ),
-        body: GridView(
-          padding: const EdgeInsets.all(21),
-          gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-            maxCrossAxisExtent: 200,
-            childAspectRatio: 3 / 2,
-            mainAxisSpacing: 20,
-            crossAxisSpacing: 20,
-          ),
-          children: DUMMY_CATEGORIES.map((cat) {
-            return CategoryItem(cat);
-          }).toList(),
-        ),
+        children: DUMMY_CATEGORIES.map((cat) {
+          return CategoryItem(cat);
+        }).toList(),
       ),
     );
   }
