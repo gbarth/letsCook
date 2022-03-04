@@ -22,27 +22,37 @@ class CategoryItem extends StatelessWidget {
     return InkWell(
       onTap: () => _selectedCategory(context),
       borderRadius: BorderRadius.circular(15),
-      child: Container(
-        padding: const EdgeInsets.all(20),
-        child: Text(
-          category.title,
-          style: const TextStyle(
-            fontFamily: 'Raleway',
-            fontSize: 17,
-            fontWeight: FontWeight.w600,
+      child: Stack(
+        fit: StackFit.expand,
+        children: [
+          Container(
+            padding: const EdgeInsets.all(20),
+            child: Text(
+              category.title,
+              style: const TextStyle(
+                fontFamily: 'Raleway',
+                fontSize: 17,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(15),
+              gradient: LinearGradient(
+                colors: [
+                  category.color.withOpacity(0.8),
+                  category.color,
+                ],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+            ),
           ),
-        ),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(15),
-          gradient: LinearGradient(
-            colors: [
-              category.color.withOpacity(0.8),
-              category.color,
-            ],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-          ),
-        ),
+          Positioned(
+            bottom: 20,
+            right: 20,
+            child: Icon(category.categoryIcon),
+          )
+        ],
       ),
     );
   }

@@ -9,51 +9,61 @@ const DUMMY_CATEGORIES = [
     id: 'c1',
     title: 'Italian',
     color: Color.fromARGB(255, 163, 20, 189),
+    categoryIcon: Icons.dinner_dining_outlined,
   ),
   Category(
     id: 'c2',
     title: 'Quick and Easy',
     color: Color.fromARGB(255, 224, 41, 28),
+    categoryIcon: Icons.egg_alt_outlined,
   ),
   Category(
     id: 'c3',
     title: 'Hamburgers',
     color: Color.fromARGB(255, 255, 153, 0),
+    categoryIcon: Icons.fastfood_outlined,
   ),
   Category(
     id: 'c4',
     title: 'German',
     color: Color.fromARGB(255, 228, 225, 64),
+    categoryIcon: Icons.local_dining_outlined,
   ),
   Category(
     id: 'c5',
     title: 'Light and Healthy',
     color: Color.fromARGB(255, 119, 247, 0),
+    categoryIcon: Icons.grass_outlined,
   ),
   Category(
     id: 'c6',
     title: 'Exotic',
     color: Color.fromARGB(255, 2, 235, 106),
+    categoryIcon: Icons.room_service_outlined,
   ),
   Category(
     id: 'c7',
     title: 'Breakfast',
     color: Color.fromARGB(255, 0, 174, 255),
+    categoryIcon: Icons.local_cafe_outlined,
   ),
   Category(
     id: 'c8',
     title: 'Asian',
     color: Color.fromARGB(255, 16, 32, 173),
+    categoryIcon: Icons.rice_bowl_outlined,
   ),
   Category(
     id: 'c9',
     title: 'French',
     color: Color.fromARGB(255, 230, 21, 91),
+    categoryIcon: Icons.breakfast_dining_outlined,
   ),
   Category(
     id: 'c10',
     title: 'Summer',
     color: Color.fromARGB(244, 255, 84, 255),
+    categoryIcon: Icons.icecream_outlined,
   ),
 ];
 
@@ -74,7 +84,7 @@ const DUMMY_MEALS = [
       '1 Onion',
       '250g Spaghetti',
       'Spices',
-      'Cheese (optional)'
+      'Cheese (optional)',
     ],
     steps: [
       'Cut the tomatoes and the onion into small pieces.',
