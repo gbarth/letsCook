@@ -21,7 +21,7 @@ class MainDrawer extends StatelessWidget {
           fontWeight: FontWeight.bold,
         ),
       ),
-      onTap: () => Navigator.of(context).pushNamed(route),
+      onTap: () => Navigator.of(context).pushReplacementNamed(route),
     );
   }
 
